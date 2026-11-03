@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title">
+        <p id="movie">Movie</p>
+        <p id="finder">Finder</p>
+    </div>
+    <p id="find-movies">Find Your Favorite Movies</p>
+    <div id="inp-butt">
+        <input type="text" placeholder="Search for a name movie.." id="inp-search">
+        <div>
+            <button id="butt-search">بحث</button>
+        </div>
+    </div>
+    <br><br>
+    <div id="all-movies">
+        <div class="one">
+            <img class="image-movies" src="one.png" alt="">
+            <p class="name-movies">INCEPTION</p>
+            <div class="yes">
+                <button >متوفر</button>
+            </div><br>
+        </div>
+        <div class="one">
+            <img class="image-movies" src="two.png" alt="">
+            <p class="name-movies">JOKER</p>
+            <div class="yes">
+                <button >متوفر</button>
+            </div><br>
+        </div>
+        <div class="one">
+            <img class="image-movies" src="three.png" alt="">
+            <p class="name-movies">THE SHAWSHANK <br> REDEMPTION</p>
+            <div id="no">
+                <button >غير متوفر </button>
+            </div><br>
+        </div>
+        <div class="one">
+            <img class="image-movies" src="four.png" alt="">
+            <p class="name-movies">WORLD WAR Z</p>
+            <div class="yes">
+                <button >متوفر</button>
+            </div><br>
+        </div>
+    </div>
+    <br><br>
+    <div id="end">
+        <div>
+            <p>هل كل الافلام متاحة ؟</p>
+            <p id="available"></p>
+        </div>
+        <div>
+            <div>
+            <p>اسماء الافلام</p>
+            <p id="add-name"></p>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
