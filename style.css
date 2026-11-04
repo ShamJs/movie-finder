@@ -118,4 +118,15 @@ body{
 p{
     text-align: center;
 }
-
+#filterMovies{
+    display: none;
+    color: white;
+    border-color: hsl(0, 0%, 50%);
+    background-color: rgba(255, 251, 251, 0.466);
+    border-radius: 5px;
+    width: 150px;
+    height: 30px; 
+    padding: 5px 30px 50px;
+    margin-left:250px;
+    text-align: center;
+}
