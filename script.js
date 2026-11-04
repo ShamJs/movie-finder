@@ -10,7 +10,7 @@ searchButton.addEventListener('click',function(){
     let nameMovie=input.value;
     if (nameMovie!=''){
         let result=movies.find(function(movie){
-            return movie.name===nameMovie;
+            return movie.name.toUpperCase()===nameMovie.toUpperCase();
         });
         let cards=document.querySelectorAll('.one');
         if(result==undefined){
