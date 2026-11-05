@@ -4,8 +4,24 @@ let movies=[
     {name:'THE SHAWSHANK REDEMPTION',available:false},
     {name:'WORLD WAR Z',available:true}
 ];
-let searchButton=document.getElementById("butt-search");//زر البحث
-let input=document.getElementById("inp-search");//حقل الادخال
+let searchButton=document.getElementById("butt-search");
+let input=document.getElementById("inp-search");
+let inpMovie=document.getElementById('filterMovies');
+inp.addEventListener('input',function(){
+    if(input.value=''){
+        inpMovie.textContent='';
+        inpMovie.style.display='none';
+        return
+    };
+    let filterMovies=movies.filter(function(m){
+        return m.name.include(input.value.toUpperCase())
+    });
+    let names=filterMovies.map(function(l){
+        return l.name
+    });
+    inpMovie.textContent=names;
+    inpMovie.style.display='block'
+});
 searchButton.addEventListener('click',function(){
     let nameMovie=input.value;
     if (nameMovie!=''){
