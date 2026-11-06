@@ -19,6 +19,10 @@ input.addEventListener('input',function(){
     let names=filterMovies.map(function(l){
         return l.name
     });
+    if(filterMovies.length === 0){
+    inpMovie.style.display = 'none';
+    return;
+    }
     inpMovie.textContent=names;
     inpMovie.style.display='block'
 });
